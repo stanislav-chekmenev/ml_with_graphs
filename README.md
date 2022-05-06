@@ -9,6 +9,6 @@
 ### Class material
 
 - [Colab 0: Introduction to graph theory](https://colab.research.google.com/drive/1lD739G6Q1eyPO21t0oHzgKK2RYiAmoId?usp=sharing): Introduction, basic properties of graphs.  
-- [Colab 1: Graph convolutions](https://colab.research.google.com/drive/1osnuRgqAmKBARwBap6Zs1IQ-vPEtIR0b#scrollTo=VCBRi-zRNwMV): Hands on explanation of graph convolutions.
+- [Colab 1: Graph convolutions](https://colab.research.google.com/drive/1osnuRgqAmKBARwBap6Zs1IQ-vPEtIR0b#scrollTo=VCBRi-zRNwMV): Hands-on guide to  graph convolutions.
 
 
