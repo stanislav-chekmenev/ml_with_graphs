@@ -5,7 +5,7 @@
 - [Graph Representation Learing](https://www.cs.mcgill.ca/~wlh/grl_book/): A great introductory book on graph neural networks.
 - [Network Science (Chapter 2, Graph Theory)](http://networksciencebook.com/chapter/2): A very well written explanation of the basis of the graph theory.
 - [Relational inductive biases, deep learning, and graph networks](https://arxiv.org/abs/1806.01261): A DeepMind article that introduces a general approach for learning on graphs.
-- [Graph convolutional networks](https://openreview.net/pdf?id=SJU4ayYgl): the first paper that introduced graph convolutional networks.
+- [Graph convolutional networks](https://openreview.net/pdf?id=SJU4ayYgl): The first paper that introduced graph convolutional networks.
 - [PyTorch Geometric](https://github.com/pyg-team/pytorch_geometric): The best library for deep learning with graphs.  
 
 ### Class material
