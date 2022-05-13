@@ -8,6 +8,7 @@
 - [Graph convolutional networks](https://openreview.net/pdf?id=SJU4ayYgl): The first paper that introduced graph convolutional networks.
 - [Graph attention networks](https://arxiv.org/abs/1710.10903): The paper that introduces the graph attention networks.
 - [PyTorch Geometric](https://github.com/pyg-team/pytorch_geometric): The best library for deep learning with graphs.  
+- [Einsum notation](https://rockt.github.io/2018/04/30/einsum): A good post about Einsum notation that is used everywhere in deep learning.
 
 ### Class material
 
