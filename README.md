@@ -15,5 +15,5 @@
 
 - [Colab 0: Introduction to graph theory](https://colab.research.google.com/drive/1lD739G6Q1eyPO21t0oHzgKK2RYiAmoId?usp=sharing): Introduction, basic properties of graphs.  
 - [Colab 1: Graph convolutions](https://colab.research.google.com/drive/1osnuRgqAmKBARwBap6Zs1IQ-vPEtIR0b#scrollTo=VCBRi-zRNwMV): Hands-on guide to  graph convolutions.
-
+- [Colab 2: PyTorch Geometric and node level tasks](https://colab.research.google.com/drive/1Xpa5FZ5wOQj_emC2eZbOUoHh6iXCktRx#scrollTo=gp88iYWl6cSl): Introduction to PyG via an example of semi-supervised node classification.
 
