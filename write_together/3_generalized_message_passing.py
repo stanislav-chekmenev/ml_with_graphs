@@ -88,6 +88,9 @@ def forward(self, node_attr, edge_attr, u, edge_index, batch):
         node_attr, edge_out_bar = self.node_model(
             node_attr, edge_index, edge_attr, u, batch
         )
+        node_attr, edge_out_bar = self.node_model(
+            node_attr, edge_index, edge_attr, u, batch
+        )
         u = self.global_model(node_attr, edge_out_bar, u, batch)
 
     # 2. Readout layer
