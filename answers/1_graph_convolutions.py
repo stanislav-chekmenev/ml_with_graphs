@@ -31,7 +31,7 @@ torch.einsum('ijk,ikl->ijl', a, b)
 # It helps to print the result and its shape after every step. Feel free to do it.
 
 # Step 1: Check node_feats tensor and its shape and write down the node_feats_flat tensor. 
-# Make sure you understand the dimensions of the tensor.
+# Make sure you understand the dimensions of the tensor. 
 node_feats_flat = torch.arange(8).view(4, 2, 1)
 print('node_feats_flat: \n', node_feats_flat)
 print('shape of node_feats_flat: \n', node_feats_flat.shape)
@@ -45,7 +45,7 @@ print('shape of edges1: \n', edges1.shape)
 print('----------------------------')
 
 # Step 3: With the help of edges1 tensor compose a tensor message1, selecting the messages 
-# from node_feats_flat that the 1st node receives and concatenating them. Do it manually by hand.
+# from node_feats_flat that the 1st node receives and concatenating them along dim=-1. Do it manually by hand.
 # Keep both heads here for now. Make sure you understand the dimensions!
 message1 = torch.Tensor([[[0, 0], [1, 1]], [[0, 2], [1, 3]]])
 print('message1: \n', message1)
@@ -58,6 +58,7 @@ message1_head1 = torch.Tensor([[0, 0], [0, 2]])
 print('message1_head1: \n', message1_head1)
 print('shape of message1_head1: \n', message1_head1.shape)
 print('----------------------------')
+
 # Step 5: Understand the layer.a MLP weight matrix and take the row corresponding to the 1st head.
 a1 = torch.Tensor([-0.2, 0.3]).view(1, 2)
 print('a1: \n', a1)

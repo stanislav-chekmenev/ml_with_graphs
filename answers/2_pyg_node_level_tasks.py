@@ -17,6 +17,7 @@ gcn_title = 'Untrained GCN embeddings'
 visualize_both(out_mlp, out_gcn, mlp_title, gcn_title, color=data.y)
 
 # Exercise 2.2
+# Train the GCN
 c_in = dataset.num_features
 c_out = dataset.num_classes
 gcn_model = GCN(c_in=c_in, c_out=c_out, c_hidden=16)
@@ -49,6 +50,20 @@ for epoch in range(1, 201):
       f'Epoch: {epoch:03d}, Train acc: {train_acc:.4f}, '
       f'Val acc: {val_acc:.4f}, Test acc: {test_acc:4f}'
     )
-    
+
+# Visualize the trained MLP vs GCN
+c_in = dataset.num_features
+c_out = dataset.num_classes
+
+mlp_model.eval()
+gcn_model.eval()
+
+out_mlp = mlp_model(data.x)
+mlp_title = 'Trained MLP embeddings'
+
+out_gcn = gcn_model(data.x, data.edge_index)
+gcn_title = 'Trained GCN embeddings'
+
+visualize_both(out_mlp, out_gcn, mlp_title, gcn_title, color=data.y)  
     
 
