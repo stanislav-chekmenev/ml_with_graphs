@@ -84,6 +84,7 @@ def forward(self, node_attr, edge_attr, u, edge_index, batch):
         edge_attr = self.edge_model(
           node_attr[src_node_idx], node_attr[dest_node_idx], edge_attr, 
           u, batch[src_node_idx]
+            
         )
         node_attr, edge_out_bar = self.node_model(
             node_attr, edge_index, edge_attr, u, batch

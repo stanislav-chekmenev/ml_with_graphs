@@ -7,14 +7,8 @@ def forward(self, node_feats, adj_matrix):
                      Supports directed edges by non-symmetric matrices. Assumes to already have added the identity connections. 
                      Shape: [batch_size, num_nodes, num_nodes]
     """
-<<<<<<< HEAD
     # Num neighbours = number of incoming edges
     num_neighbours = adj_matrix.sum(dim=-1, keepdims=True) # Sum across all columns but don't reduce the last dim.
-=======
-    # TODO: write the forward pass together.
-    # Num neighbours = number of incoming edges
-    num_neighbours = adj_matrix.sum(dim=-1, keepdims=True) # Sum across all columnsm but don't reduce the last dim.
->>>>>>> e4d97d5a249a1817d2a1941693e9ed286e77ea02
     node_feats = self.projection(node_feats) # Apply the weight matrix to the features to create a message.
     node_feats = torch.bmm(adj_matrix, node_feats) # A batch matrix multiplication. Check the update rule.
     node_feats = node_feats / num_neighbours # Averaging the messages
